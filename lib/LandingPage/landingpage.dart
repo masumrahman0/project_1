@@ -9,7 +9,7 @@ class LandingPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Text(
-                "Flutter Development",
+                "We Are Learning Flutter",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 40,

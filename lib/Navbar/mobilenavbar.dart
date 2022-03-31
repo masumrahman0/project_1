@@ -11,7 +11,7 @@ class MobileNavbar extends StatelessWidget {
         child: Column(
           children: [
             Text(
-              "We Are Learning Flutter",
+              "Flutter Development",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 30,
