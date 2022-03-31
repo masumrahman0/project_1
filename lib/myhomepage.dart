@@ -19,13 +19,15 @@ class MyHomePage extends StatelessWidget {
             ],
           ),
         ),
-        child: Column(children: [
-          Navbar(),
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 40.0),
-            child: LandingPage(),
-          ),
-        ],),
+        child: SingleChildScrollView(
+          child: Column(children: [
+            Navbar(),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 40.0),
+              child: LandingPage(),
+            ),
+          ],),
+        ),
       ),
     );
   }

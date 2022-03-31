@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 
 class LandingPage extends StatelessWidget {
-  List<Widget> pagechildren() {
+  List<Widget> pagechildren(double width) {
     return <Widget>[
       Container(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 50.0),
+        width: width,
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Text(
                 "Flutter Development",
@@ -49,6 +48,10 @@ class LandingPage extends StatelessWidget {
             ],
           ),
         ),
+      Image.asset(
+        "assets/images/flutter.jpg",
+        width: width,
+        height: width,
       ),
     ];
   }
@@ -59,11 +62,11 @@ class LandingPage extends StatelessWidget {
       if (constraints.maxWidth > 800) {
         return Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: pagechildren(),
+          children: pagechildren(constraints.biggest.width/2),
         );
       } else {
         return Column(
-          children: pagechildren(),
+          children: pagechildren(constraints.biggest.width),
         );
       }
     });
